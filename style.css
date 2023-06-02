@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    /* Neutral */
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+
+body{
+    font-family: 'DM Sans';
+    font-size: 18px;
+    min-height: 375px;
+    max-height: 1440px;
+    background-color: var(--cream);
+}
+
+main{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20vh;
+    gap: 20px;
+}
+
+.header-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 480.81px;
+    padding: 25px;
+    border-radius: 20px;
+
+    background-color: var(--soft-red);
+    color: var(--very-pale-orange);
+}
+
+.header-box .value{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.header-box .circles{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header-box .border-circle{
+    overflow-x: 50px;
+    border: 3px solid var(--very-pale-orange);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header-box .filled-circle{
+    background-color: var(--dark-brown);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.middle-box{
+    padding: 25px 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.middle-box .title{
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--dark-brown);
+    margin-bottom: 100px;
+}
+
+.middle-box .week-days {
+    display: flex;
+    flex-direction: row;
+    margin: 0 15px;
+    color: var(--medium-brown);
+}
+
+/* 
+Tive dificuldade em definir as colunas
+.week-days .column{
+    background-color: var(--soft-red);
+    width: 20px;
+    border-radius: 20px;
+}
+
+.mon, .tue, .wed, .thu, .fri, .sat, .sun{
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.middle-box .line{
+    width: 438px;
+    height: 2px;
+    background-color: rgba(50, 50, 50, 0.2);
+    margin: 30px 0;
+}
+
+.middle-box .box-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-end .total .total-title{
+    color: var(--medium-brown);
+}
+
+.box-end .total .value{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--dark-brown);
+}
+
+.box-end .comparative{
+    margin-top: 27px;
+}
+
+.comparative .value{
+    font-weight: 700;
+    color: var(--dark-brown);
+    text-align: right;
+}
+
+.comparative .last-month{
+    color: var(--medium-brown);
+}
